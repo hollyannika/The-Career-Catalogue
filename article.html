@@ -14,27 +14,22 @@
 
   <div class="page">
 
-    <!-- Site Header -->
     <header class="site-header">
       <a href="index.html"><span class="site-title">The Career Catalogue</span></a>
-      <span class="site-tagline">By Hollyannika</span>
     </header>
 
-    <!-- Article content rendered here -->
     <main id="article-content">
-      <p style="padding: 4rem 0; color: #6B6860; font-size: 14px;">Loading profile…</p>
+      <p style="padding: 4rem 0; color: #6B6860; font-size: 14px;">Loading profile...</p>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
       <div>
         <p class="footer-brand">The Career Catalogue</p>
-        <p class="footer-sub">Every path is a valid one.</p>
+        <p class="footer-sub">Celebrating every career path.</p>
       </div>
-      <span class="footer-by">By Hollyannika</span>
     </footer>
 
-  </div><!-- /page -->
+  </div>
 
   <script src="data.js"></script>
   <script>
@@ -49,109 +44,66 @@
     }
 
     function renderMoreProfiles(current) {
-      const others = profiles
-        .filter(p => p.id !== current.id)
-        .slice(0, 4);
-
+      const others = profiles.filter(p => p.id !== current.id).slice(0, 4);
       if (others.length === 0) return '';
-
-      return `
-        <div class="more-section">
-          <p class="more-title">More profiles</p>
-          <div class="grid">
-            ${others.map(p => `
-              <a class="card" href="article.html?id=${p.id}">
-                <p class="card-industry">${p.industryLabel}</p>
-                <p class="card-name">${p.name}</p>
-                <p class="card-role">${p.role} · ${p.location}</p>
-                <p class="card-hook">${p.hook}</p>
-              </a>`).join('')}
-          </div>
-        </div>`;
+      return '<div class="more-section"><p class="more-title">More profiles</p><div class="grid">' +
+        others.map(p =>
+          '<a class="card" href="article.html?id=' + p.id + '">' +
+          '<p class="card-industry">' + p.industryLabel + '</p>' +
+          '<p class="card-name">' + p.name + '</p>' +
+          '<p class="card-role">' + p.role + ' · ' + p.location + '</p>' +
+          '<p class="card-hook">' + p.hook + '</p>' +
+          '</a>'
+        ).join('') +
+        '</div></div>';
     }
 
     function renderArticle(profile) {
-      // Update page title
-      document.title = `${profile.name} — The Career Catalogue`;
+      document.title = profile.name + ' — The Career Catalogue';
 
-      // Build path sections
-      const sections = profile.path.map(section => `
-        <div class="article-section">
-          <p class="article-section-heading">${section.heading}</p>
-          <p class="article-section-body">${section.body}</p>
-        </div>`).join('');
+      var sections = profile.path.map(function(section) {
+        return '<div class="article-section">' +
+          '<p class="article-section-heading">' + section.heading + '</p>' +
+          '<p class="article-section-body">' + section.body + '</p>' +
+          '</div>';
+      }).join('');
 
-      document.getElementById('article-content').innerHTML = `
+      var photoHTML = profile.image
+        ? '<img src="images/' + profile.image + '" alt="' + profile.name + '" style="width:100%;height:100%;object-fit:cover;border-radius:10px;" />'
+        : '<div class="article-photo-initials">' + getInitials(profile.name) + '</div>';
 
-        <!-- Back link -->
-        <div class="article-header">
-          <a class="article-back" href="index.html">← All profiles</a>
-
-          <p class="article-industry">${profile.industryLabel}</p>
-          <h1 class="article-title">${profile.name}</h1>
-          <p class="article-subtitle">${profile.role} · ${profile.location}</p>
-
-          <div class="article-meta">
-            <div class="article-meta-item">
-              <span class="article-meta-label">Industry</span>
-              <span class="article-meta-value">${profile.industryLabel}</span>
-            </div>
-            <div class="article-meta-item">
-              <span class="article-meta-label">Location</span>
-              <span class="article-meta-value">${profile.location}</span>
-            </div>
-            <div class="article-meta-item">
-              <span class="article-meta-label">Published</span>
-              <span class="article-meta-value">${profile.publishedDate}</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Photo placeholder -->
-        <div class="article-photo">
-          <div class="article-photo-initials">${getInitials(profile.name)}</div>
-        </div>
-
-        <!-- Intro -->
-        <p class="article-intro">${profile.intro}</p>
-
-        <!-- Story sections -->
-        ${sections}
-
-        <!-- Pull quote -->
-        <div class="pull-quote">
-          <p>${profile.pullQuote}</p>
-        </div>
-
-        <!-- Advice & Uni -->
-        <div class="info-grid">
-          <div class="info-box">
-            <p class="info-box-label">Advice to someone starting out</p>
-            <p class="info-box-text">${profile.advice}</p>
-          </div>
-          <div class="info-box">
-            <p class="info-box-label">University route?</p>
-            <p class="info-box-text">${profile.uniRoute}</p>
-          </div>
-        </div>
-
-        <hr class="article-divider" />
-
-        <!-- More profiles -->
-        ${renderMoreProfiles(profile)}
-      `;
+      document.getElementById('article-content').innerHTML =
+        '<div class="article-header">' +
+        '<a class="article-back" href="index.html">← All profiles</a>' +
+        '<p class="article-industry">' + profile.industryLabel + '</p>' +
+        '<h1 class="article-title">' + profile.name + '</h1>' +
+        '<p class="article-subtitle">' + profile.role + ' · ' + profile.location + '</p>' +
+        '<div class="article-meta">' +
+        '<div class="article-meta-item"><span class="article-meta-label">Industry</span><span class="article-meta-value">' + profile.industryLabel + '</span></div>' +
+        '<div class="article-meta-item"><span class="article-meta-label">Location</span><span class="article-meta-value">' + profile.location + '</span></div>' +
+        '<div class="article-meta-item"><span class="article-meta-label">Published</span><span class="article-meta-value">' + profile.publishedDate + '</span></div>' +
+        '</div></div>' +
+        '<div class="article-photo">' + photoHTML + '</div>' +
+        '<p class="article-intro">' + profile.intro + '</p>' +
+        sections +
+        '<div class="pull-quote"><p>' + profile.pullQuote + '</p></div>' +
+        '<div class="info-grid">' +
+        '<div class="info-box"><p class="info-box-label">Advice to someone starting out</p><p class="info-box-text">' + profile.advice + '</p></div>' +
+        '<div class="info-box"><p class="info-box-label">University route?</p><p class="info-box-text">' + profile.uniRoute + '</p></div>' +
+        '</div>' +
+        '<hr class="article-divider" />' +
+        renderMoreProfiles(profile);
     }
 
     function renderNotFound() {
-      document.getElementById('article-content').innerHTML = `
-        <div style="padding: 4rem 0; text-align: center;">
-          <p style="font-size: 14px; color: #6B6860; margin-bottom: 1rem;">Profile not found.</p>
-          <a href="index.html" style="font-size: 13px; font-weight: 500; color: #111110;">← Back to all profiles</a>
-        </div>`;
+      document.getElementById('article-content').innerHTML =
+        '<div style="padding: 4rem 0; text-align: center;">' +
+        '<p style="font-size: 14px; color: #6B6860; margin-bottom: 1rem;">Profile not found.</p>' +
+        '<a href="index.html" style="font-size: 13px; font-weight: 500; color: #111110;">← Back to all profiles</a>' +
+        '</div>';
     }
 
-    // Init
-    const profile = getProfileFromURL();
+    var profile = getProfileFromURL();
     if (profile) {
       renderArticle(profile);
     } else {
