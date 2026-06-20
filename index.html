@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Career Catalogue</title>
+  <meta name="description" content="Real people. Honest paths. Stories from every industry showing that there's no single route to a life well built." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- Site Header -->
+    <header class="site-header">
+      <a href="index.html"><span class="site-title">The Career Catalogue</span></a>
+      <span class="site-tagline">By Hollyannika</span>
+    </header>
+
+    <!-- Masthead -->
+    <section class="masthead">
+      <p class="masthead-label">Est. 2025</p>
+      <h1 class="masthead-title">The Career<br>Catalogue</h1>
+      <p class="masthead-sub">Real people. Honest paths. Stories from every industry showing that there's no single route to a life well built.</p>
+    </section>
+
+    <!-- Industry Nav -->
+    <nav class="industry-nav" id="industry-nav" aria-label="Browse by industry"></nav>
+
+    <!-- Section Header -->
+    <div class="section-header">
+      <span class="section-label">Latest profile</span>
+      <span class="section-label" id="count"></span>
+    </div>
+
+    <!-- Featured Card -->
+    <div class="featured" id="featured"></div>
+
+    <!-- Profile Grid -->
+    <div class="grid" id="grid"></div>
+    <p class="no-results" id="no-results">No profiles in this category yet — more coming soon.</p>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div>
+        <p class="footer-brand">The Career Catalogue</p>
+        <p class="footer-sub">Every path is a valid one.</p>
+      </div>
+      <span class="footer-by">By Hollyannika</span>
+    </footer>
+
+  </div><!-- /page -->
+
+  <script src="data.js"></script>
+  <script>
+    function getInitials(name) {
+      return name.split(' ').map(n => n[0]).join('').toUpperCase();
+    }
+
+    function renderFeatured(profile) {
+      return `
+        <div class="feat-img">
+          <div class="feat-initials">${getInitials(profile.name)}</div>
+        </div>
+        <div class="feat-body">
+          <div>
+            <p class="feat-industry">${profile.industryLabel}</p>
+            <h2 class="feat-name">${profile.name}</h2>
+            <p class="feat-role">${profile.role} · ${profile.location}</p>
+            <p class="feat-hook">${profile.hook}</p>
+          </div>
+          <a class="feat-link" href="article.html?id=${profile.id}">
+            Read ${profile.name.split(' ')[0]}'s story <span class="arrow">→</span>
+          </a>
+        </div>`;
+    }
+
+    function renderCard(profile) {
+      return `
+        <a class="card" href="article.html?id=${profile.id}" data-industry="${profile.industry}">
+          <p class="card-industry">${profile.industryLabel}</p>
+          <p class="card-name">${profile.name}</p>
+          <p class="card-role">${profile.role} · ${profile.location}</p>
+          <p class="card-hook">${profile.hook}</p>
+        </a>`;
+    }
+
+    function render(filterIndustry) {
+      // Build nav
+      const nav = document.getElementById('industry-nav');
+      nav.innerHTML = industries.map(ind => `
+        <button
+          onclick="render('${ind.value}')"
+          class="${filterIndustry === ind.value ? 'active' : ''}"
+          aria-pressed="${filterIndustry === ind.value}">
+          ${ind.label}
+        </button>`).join('');
+
+      // Filter profiles
+      const filtered = filterIndustry === 'all'
+        ? profiles
+        : profiles.filter(p => p.industry === filterIndustry);
+
+      // Featured = first in filtered list
+      const featured = filtered[0];
+      const rest = filtered.slice(1);
+
+      // Update count
+      document.getElementById('count').textContent =
+        filtered.length + (filtered.length === 1 ? ' profile' : ' profiles');
+
+      // Render featured
+      const featEl = document.getElementById('featured');
+      if (featured) {
+        featEl.innerHTML = renderFeatured(featured);
+        featEl.style.display = '';
+      } else {
+        featEl.style.display = 'none';
+      }
+
+      // Render grid
+      const gridEl = document.getElementById('grid');
+      const noResults = document.getElementById('no-results');
+
+      if (rest.length > 0) {
+        gridEl.innerHTML = rest.map(renderCard).join('');
+        gridEl.style.display = '';
+        noResults.style.display = 'none';
+      } else if (!featured) {
+        gridEl.innerHTML = '';
+        gridEl.style.display = 'none';
+        noResults.style.display = 'block';
+      } else {
+        gridEl.innerHTML = '';
+        gridEl.style.display = 'none';
+        noResults.style.display = 'none';
+      }
+    }
+
+    // Initial render
+    render('all');
+  </script>
+
+</body>
+</html>

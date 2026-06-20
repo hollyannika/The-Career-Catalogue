@@ -1,0 +1,551 @@
+/* ============================================================
+   THE CAREER CATALOGUE — style.css
+   Shared styles across index.html and article.html
+   ============================================================ */
+
+/* --- Reset & Base ----------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #111110;
+  --off-white: #F7F6F3;
+  --mid: #6B6860;
+  --light: #C8C6C0;
+  --border: #E2E0DB;
+  --accent: #111110;
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+  --max: 720px;
+  --radius: 10px;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--off-white);
+  color: var(--black);
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* --- Layout ----------------------------------------------- */
+.page {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --- Site Header ------------------------------------------ */
+.site-header {
+  border-bottom: 0.5px solid var(--border);
+  padding: 1.5rem 0 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.site-header a {
+  text-decoration: none;
+}
+
+.site-title {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--black);
+}
+
+.site-tagline {
+  font-size: 12px;
+  color: var(--mid);
+}
+
+/* --- Masthead (homepage hero) ----------------------------- */
+.masthead {
+  padding: 2.75rem 0 2rem;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.masthead-label {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 0.75rem;
+}
+
+.masthead-title {
+  font-size: clamp(36px, 6vw, 52px);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  color: var(--black);
+}
+
+.masthead-sub {
+  font-size: 15px;
+  color: var(--mid);
+  margin-top: 0.85rem;
+  line-height: 1.65;
+  max-width: 500px;
+}
+
+/* --- Industry Nav ----------------------------------------- */
+.industry-nav {
+  display: flex;
+  overflow-x: auto;
+  border-bottom: 0.5px solid var(--border);
+  margin-top: 2rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.industry-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.industry-nav button {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.65rem 1rem 0.6rem;
+  font-size: 13px;
+  font-family: var(--font);
+  color: var(--mid);
+  cursor: pointer;
+  white-space: nowrap;
+  margin-bottom: -0.5px;
+  transition: color 0.15s;
+}
+
+.industry-nav button:hover {
+  color: var(--black);
+}
+
+.industry-nav button.active {
+  color: var(--black);
+  border-bottom: 1.5px solid var(--black);
+  font-weight: 500;
+}
+
+/* --- Section Header --------------------------------------- */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1.75rem 0 1.25rem;
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
+/* --- Featured Card ---------------------------------------- */
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: white;
+  margin-bottom: 1px;
+}
+
+.feat-img {
+  background: #EDECEA;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feat-initials {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: white;
+  border: 0.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--mid);
+}
+
+.feat-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feat-industry {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 0.6rem;
+}
+
+.feat-name {
+  font-size: 27px;
+  font-weight: 500;
+  color: var(--black);
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.feat-role {
+  font-size: 13px;
+  color: var(--mid);
+  margin-top: 0.3rem;
+}
+
+.feat-hook {
+  font-size: 14px;
+  color: var(--mid);
+  line-height: 1.65;
+  margin-top: 1.25rem;
+  border-top: 0.5px solid var(--border);
+  padding-top: 1rem;
+}
+
+.feat-link {
+  margin-top: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--black);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.feat-link:hover {
+  text-decoration: underline;
+}
+
+.feat-link .arrow {
+  font-size: 16px;
+}
+
+/* --- Profile Grid ----------------------------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 1px;
+}
+
+.card {
+  background: white;
+  padding: 1.25rem 1.5rem;
+  display: block;
+  text-decoration: none;
+  transition: background 0.12s;
+}
+
+.card:hover {
+  background: #F2F0EC;
+}
+
+.card-industry {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 0.35rem;
+}
+
+.card-name {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.card-role {
+  font-size: 13px;
+  color: var(--mid);
+  margin-top: 0.15rem;
+}
+
+.card-hook {
+  font-size: 13px;
+  color: var(--mid);
+  line-height: 1.55;
+  margin-top: 0.65rem;
+}
+
+/* --- No results state ------------------------------------- */
+.no-results {
+  background: white;
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 3rem;
+  text-align: center;
+  color: var(--mid);
+  font-size: 14px;
+  margin-top: 1px;
+  display: none;
+}
+
+/* --- Footer ----------------------------------------------- */
+.site-footer {
+  border-top: 0.5px solid var(--border);
+  padding: 1.75rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.footer-brand {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.footer-sub {
+  font-size: 12px;
+  color: var(--mid);
+  margin-top: 3px;
+}
+
+.footer-by {
+  font-size: 12px;
+  color: var(--mid);
+}
+
+/* --- Article Page ----------------------------------------- */
+.article-header {
+  padding: 2.5rem 0 2rem;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.article-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--mid);
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.article-back:hover {
+  color: var(--black);
+}
+
+.article-industry {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 0.75rem;
+}
+
+.article-title {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--black);
+}
+
+.article-subtitle {
+  font-size: 15px;
+  color: var(--mid);
+  margin-top: 0.5rem;
+}
+
+.article-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 0.5px solid var(--border);
+}
+
+.article-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.article-meta-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--light);
+}
+
+.article-meta-value {
+  font-size: 13px;
+  color: var(--mid);
+}
+
+/* --- Article Photo placeholder ---------------------------- */
+.article-photo {
+  width: 100%;
+  aspect-ratio: 16/7;
+  background: #EDECEA;
+  border-radius: var(--radius);
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-photo-initials {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: white;
+  border: 0.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--mid);
+}
+
+/* --- Article Body ----------------------------------------- */
+.article-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--black);
+  margin-bottom: 2rem;
+}
+
+.article-section {
+  margin-bottom: 2rem;
+}
+
+.article-section-heading {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 0.6rem;
+}
+
+.article-section-body {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #3A3936;
+}
+
+/* --- Pull Quote ------------------------------------------- */
+.pull-quote {
+  border-left: 2px solid var(--black);
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.pull-quote p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--black);
+  font-style: italic;
+  letter-spacing: -0.01em;
+}
+
+/* --- Advice & Uni boxes ----------------------------------- */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 2.5rem 0;
+}
+
+.info-box {
+  background: white;
+  padding: 1.5rem;
+}
+
+.info-box-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 0.6rem;
+}
+
+.info-box-text {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--black);
+}
+
+/* --- Article Divider -------------------------------------- */
+.article-divider {
+  border: none;
+  border-top: 0.5px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+/* --- More profiles section -------------------------------- */
+.more-section {
+  margin: 3rem 0 2rem;
+}
+
+.more-title {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 1rem;
+}
+
+/* --- Responsive ------------------------------------------- */
+@media (max-width: 600px) {
+  .featured {
+    grid-template-columns: 1fr;
+  }
+
+  .feat-img {
+    min-height: 180px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-tagline {
+    display: none;
+  }
+
+  .article-meta {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
