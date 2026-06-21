@@ -14,8 +14,9 @@ const profiles = [
     industryLabel: "Food & Hospitality",
     role: "Microbakery founder",
     location: "Dunoon, Scotland",
-    hook: "\"I feel like I've lived several lives by twenty-six.\" From a farm in Aberdeenshire to selling out loaves from her driveway - built on instinct, bread, and a camper van.",
-    intro: "When you speak to Emma Leslie, you get the sense she's lived several lives by the age of twenty-six. She laughs about it herself, \"I feel like a granny.\" But what she's really describing is the winding, instinct-led journey that eventually pushed her toward the thing she was always meant to do: create something of her own.",
+    hook: "\"I feel like I've lived several lives by twenty-six.\" From a farm in Aberdeenshire to selling out loaves from her driveway; built on instinct, bread, and a camper van.",
+    intro: "When you speak to Emma Leslie, you get the sense she's lived several lives by the age of twenty-six. She laughs about it herself, \"I feel like a granny.\" But what she's really describing is the winding, instinct-led journey that eventually pushed her toward the thing she was always meant to do: create something of her own.",<br><br> Today, Emma runs a microbakery and coffee van from Dunoon on Scotland’s west coast. What started as a simple idea, selling Italian-style sandwiches from a market stall, has grown “arms and legs”, as she puts it. What it’s become is far more exciting: a one-woman bakery operation with a devoted local following, a camper-van-turned-coffee-van, and a community that sells her out week after week.
+<br><br> But like most good stories, this one didn’t begin with a business plan. It began with a girl growing up on a farm in rural Aberdeenshire, trying absolutely everything and feeling like nothing quite stuck.
     path: [
       {
         heading: "Growing Up: A Creative Mind in the Countryside",
