@@ -1,5 +1,5 @@
 // ============================================================
-//  THE CAREER CATALOGUE — data.js
+//  THE CAREER CATALOGUE - data.js
 //  To add a new profile, copy one profile object below,
 //  paste it at the top of the `profiles` array, and fill in
 //  the fields. The site will update automatically.
@@ -14,7 +14,7 @@ const profiles = [
     industryLabel: "Food & Hospitality",
     role: "Microbakery founder",
     location: "Dunoon, Scotland",
-    hook: "\"I feel like I've lived several lives by twenty-six.\" From a farm in Aberdeenshire to selling out loaves from her driveway — built on instinct, bread, and a camper van.",
+    hook: "\"I feel like I've lived several lives by twenty-six.\" From a farm in Aberdeenshire to selling out loaves from her driveway - built on instinct, bread, and a camper van.",
     intro: "When you speak to Emma Leslie, you get the sense she's lived several lives by the age of twenty-six. She laughs about it herself, \"I feel like a granny.\" But what she's really describing is the winding, instinct-led journey that eventually pushed her toward the thing she was always meant to do: create something of her own.",
     path: [
       {
@@ -230,7 +230,7 @@ const profiles = [
   }
 ];
 
-// Industry filter options — add new ones here as your catalogue grows
+// Industry filter options - add new ones here as your catalogue grows
 const industries = [
   { value: "all", label: "All" },
   { value: "food", label: "Food & Hospitality" },
