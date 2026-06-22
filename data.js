@@ -24,7 +24,7 @@ const profiles = [
       },
       {
         heading: "Pop-Ups, Sell-Outs and A Very Busy Summer",
-        body: "She started small, selling loaves of bread from a folding table at the end of her driveway to build an audience. They took off immediately. Soon, a local café asked to stock her bread, and her monthly market stalls sold out within the first hour. However, waking up at 1am or 2am to bake fresh every single morning quickly became an unsustainable seven-day commitment."
+        body: "She started small, selling loaves of bread from a folding table at the end of her driveway to build an audience. They took off immediately. Soon, a local cafe asked to stock her bread, and her monthly market stalls sold out within the first hour. However, waking up at 1am or 2am to bake fresh every single morning quickly became an unsustainable seven-day commitment."
       },
       {
         heading: "Pivoting to the Coffee Van",
