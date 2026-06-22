@@ -168,7 +168,7 @@ const profiles = [
       },
       {
         heading: "Brighton and Beyond: Learning Through Freedom",
-        body: "Agnes moved to Brighton for university, sharing a flat with friends studying at Sussex. Her foundation course at college was intensive, almost full-time, and it was there she began specialising in wood and metal. At university, lectures were few, but the space to explore was everything. Art school gave Agnes more than practical skills; it taught her how to think critically about her work: why she was making it, what her materials meant, and how to defend her choices."
+        body: "Agnes moved to Brighton for university, sharing a flat with friends studying at Sussex. Her foundation course at college was intensive, almost full-time, and it was there she began specialising in wood and metal. At university, lectures were few, but the space to explore was everything. Art school gave Agnes more than practical skills; it taught how to think critically about her work: why she was making it, what her materials meant, and how to defend her choices."
       },
       {
         heading: "Life After Graduation: Crafting a Career",
@@ -216,6 +216,47 @@ const profiles = [
     advice: "Take the risk. If you don't give new things a chance you will find yourself getting very bored very quickly. Change is good, oftentimes it opens your eyes to better things. Dedicate time to learning, prep yourself with a strong foundation which makes your first day significantly less daunting.",
     uniRoute: "No - Rachel chose to enter the workforce straight after high school to start earning money, proving that taking a few years out to work does not hold you back from finding a dynamic career later.",
     publishedDate: "June 2026"
+  },
+  {
+    id: "amanda-amaeshi",
+    name: "Amanda Amaeshi",
+    image: "amanda.jpeg",
+    industry: "law",
+    industryLabel: "Law & Advocacy",
+    role: "Legal Caseworker & Trustee",
+    location: "Glasgow / London",
+    hook: `"I did all the things I was supposed to do, where is the job?" Amanda graduated with a First from UCL, but found the transition into the real world far messier than the linear success story she was sold.`,
+    intro: `There is a particular pressure placed on young high achievers: the expectation that if you work hard enough, your future will unfold neatly. But for many graduates entering the job market, reality feels far messier.<br><br>When speaking to Amanda Amaeshi, what strikes you isn’t simply the scale of what she has achieved—a First Class Law degree from UCL, serving on the First Minister’s National Advisory Council, and becoming a trustee for the Young Women’s Movement. It’s how honestly she speaks about uncertainty, burnout, and learning to build a life beyond achievement alone.`,
+    path: [
+      {
+        heading: "A Desire to Help, Beyond Stereotypes",
+        body: "Initially, Amanda wanted to be a doctor, a path she attributes partly to the immigrant experience of being pushed toward traditional prestige. Realising she was terrified of blood, she pivoted, but her core motivation remained. Growing up, she was deeply frustrated by the phrase 'that's just the way the world is.' Her refusal to accept unfairness naturally drew her toward politics, advocacy, and social justice from a young age."
+      },
+      {
+        heading: "Trusting Her Gut Against External Expectations",
+        body: "Raised by a mother in medicine and a father in academia, there was an implicit external assumption that Amanda would follow a traditional professional route. However, her parents always championed passion over prestige. At school, she chose to stick with Latin despite peers calling it a 'useless' subject. It became a formative lesson in trusting her gut and continuing with something she genuinely loved, regardless of whether others understood it."
+      },
+      {
+        heading: "The London Transition and Imposter Syndrome",
+        body: "Moving to London to study law at UCL was transformative. Leaving an environment that felt socially restrictive and lacking in diversity, London offered immediate freedom. 'I could walk down the street and see people who looked like me,' she notes. Yet, elite law school brought intense imposter syndrome. Surrounded by highly competitive peers, she had to adjust to a new reality where you couldn't simply memorise a marking scheme, and there wasn't always a single right answer."
+      },
+      {
+        heading: "Rejecting the Corporate Law Pipeline",
+        body: "Like most law students, Amanda was funneled toward commercial law careers. Attending networking events, she quickly realised she didn't care about finance terminology or corporate shares. Despite the immense pressure to follow the pack, she chose to reject the corporate legal qualification route after graduation, holding firm to her values and focusing instead on public-facing advocacy and systemic change."
+      },
+      {
+        heading: "The Myth of the Linear Path",
+        body: "Postgraduate life brought a stark reality check. Despite a stellar CV, Amanda faced a wall of ghosting and rejections from 'entry-level' roles that were ultimately given to applicants with a decade of experience. She later secured a legal traineeship at the Council of Europe in Strasbourg. Today, she balances multiple freelance, trustee, and casework hats, viewing the variety as energising rather than a lack of direction."
+      },
+      {
+        heading: "Redefining Success Through Running",
+        body: "As a teenager, Amanda joined the First Minister’s National Advisory Council on Women and Girls alongside CEOs and professors, learning early on that 'nobody knows everything.' Today, her biggest shift has been detaching her identity from productivity. She started doing Parkrun to prove to herself that not everything has to be tied to perfection or being the best in the room. Success, she has learned, is simply continuing to show up for yourself."
+      }
+    ],
+    pullQuote: "I applied for loads of entry-level jobs and would get rejected or ghosted completely, only to see the person who got it graduated ten years ago. It felt like: I did everything I was supposed to do, where is the job?",
+    advice: "Do not tie your entire self-worth to productivity or academic performance. Show personality on professional platforms like LinkedIn by sharing actual thoughts on policy issues, and remember that success isn't linear—it's okay to wear multiple hats.",
+    uniRoute: "Yes: Graduated with a First Class LLB Law degree from University College London (UCL).",
+    publishedDate: "June 2026"
   }
 ];
 
@@ -225,5 +266,6 @@ const industries = [
   { value: "creative", label: "Design & Creative" },
   { value: "tech", label: "Tech & Product Design" },
   { value: "fashion", label: "Fashion" },
-  { value: "sales", label: "Sales & Automotive" }
+  { value: "sales", label: "Sales & Automotive" },
+  { value: "law", label: "Law & Advocacy" }
 ];
