@@ -189,7 +189,7 @@ const profiles = [
     name: "Rachel Shepherd",
     image: "rachel.jpeg",
     industry: "sales",
-    industryLabel: "Sales & Automotive",
+    industryLabel: "Sales",
     role: "Sales executive",
     location: "Scotland",
     hook: `"If you'd asked me before applying where I'd end up after bartending, I never in a million years would've said selling cars." Rachel took a while to find her feet, but a whim application turned out to be a match made in heaven.`,
@@ -266,6 +266,6 @@ const industries = [
   { value: "creative", label: "Design & Creative" },
   { value: "tech", label: "Tech & Product Design" },
   { value: "fashion", label: "Fashion" },
-  { value: "sales", label: "Sales & Automotive" },
+  { value: "sales", label: "Sales" },
   { value: "law", label: "Law & Advocacy" }
 ];
