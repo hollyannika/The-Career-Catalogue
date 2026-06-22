@@ -218,3 +218,12 @@ const profiles = [
     publishedDate: "June 2026"
   }
 ];
+
+const industries = [
+  { value: "all", label: "All Sectors" },
+  { value: "food-drink", label: "Food & Drink" },
+  { value: "creative", label: "Design & Creative" },
+  { value: "tech", label: "Tech & Product Design" },
+  { value: "fashion", label: "Fashion" },
+  { value: "sales", label: "Sales & Automotive" }
+];
