@@ -9,6 +9,7 @@ const profiles = [
   {
     id: "emma-leslie",
     name: "Emma Leslie",
+    image: "emma.jpeg",
     industry: "food",
     industryLabel: "Food & Hospitality",
     role: "Microbakery founder",
@@ -41,6 +42,7 @@ const profiles = [
   {
     id: "alix-picken",
     name: "Alix Picken",
+    image: "alix.jpeg",
     industry: "design",
     industryLabel: "Design & Creative",
     role: "Brand experience founder",
@@ -73,6 +75,7 @@ const profiles = [
   {
     id: "miriam-khenissi",
     name: "Miriam Khenissi",
+    image: "miriam.jpeg",
     industry: "tech",
     industryLabel: "Tech",
     role: "Product designer",
@@ -105,6 +108,7 @@ const profiles = [
   {
     id: "mette-baillie",
     name: "Mette Baillie",
+    image: "mette.jpeg",
     industry: "fashion",
     industryLabel: "Fashion",
     role: "Couture dressmaker",
@@ -137,6 +141,7 @@ const profiles = [
   {
     id: "agnes-jones",
     name: "Agnes Jones",
+    image: "agnes.jpeg",
     industry: "craft",
     industryLabel: "Craft & Making",
     role: "Blacksmith & steel artist",
@@ -169,6 +174,7 @@ const profiles = [
   {
     id: "rachel-shepherd",
     name: "Rachel Shepherd",
+    image: "rachel.jpeg",
     industry: "sales",
     industryLabel: "Sales & Retail",
     role: "Sales executive",
