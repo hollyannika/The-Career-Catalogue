@@ -4,7 +4,7 @@ const profiles = [
     name: "Emma Leslie",
     image: "emma.jpeg",
     industry: "hospitality",
-    industryLabel: "Food & Drink",
+    industryLabel: "Hospitality",
     role: "Microbakery & Coffee Van Owner",
     location: "Dunoon, Scotland",
     hook: `"My whole business has been built on social media." Emma combined her marketing background with a self-taught passion for Italian bread to build a thriving west coast microbakery operation.`,
