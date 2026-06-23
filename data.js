@@ -3,7 +3,7 @@ const profiles = [
     id: "emma-leslie",
     name: "Emma Leslie",
     image: "emma.jpeg",
-    industry: "food-drink",
+    industry: "hospitality",
     industryLabel: "Food & Drink",
     role: "Microbakery & Coffee Van Owner",
     location: "Dunoon, Scotland",
@@ -78,7 +78,7 @@ const profiles = [
     name: "Miriam Khenissi",
     image: "miriam.jpeg",
     industry: "tech",
-    industryLabel: "Tech & Product Design",
+    industryLabel: "Tech",
     role: "Product Designer",
     location: "Edinburgh",
     hook: `"Even if you don't have the full university experience, you can create your own." From studying mathematics in Tunisia to creating AR filters with over a billion impressions, Miriam blends creativity with logic.`,
@@ -262,9 +262,9 @@ const profiles = [
 
 const industries = [
   { value: "all", label: "All Sectors" },
-  { value: "food-drink", label: "Food & Drink" },
+  { value: "hospitality", label: "Hospitality" },
   { value: "creative", label: "Design & Creative" },
-  { value: "tech", label: "Tech & Product Design" },
+  { value: "tech", label: "Tech" },
   { value: "fashion", label: "Fashion" },
   { value: "sales", label: "Sales" },
   { value: "law", label: "Law & Advocacy" }
