@@ -1,10 +1,92 @@
 const profiles = [
   {
+    id: "amanda-amaeshi",
+    name: "Amanda Amaeshi",
+    image: "amanda.jpeg",
+    industry: "law",
+    industryLabel: "Law & Advocacy",
+    role: "Legal Caseworker & Trustee",
+    location: "Glasgow / London",
+    hook: "I did all the things I was supposed to do, where is the job? Amanda graduated with a First from UCL, but found the transition into the real world far messier than the linear success story she was sold.",
+    intro: "There is a particular pressure placed on young high achievers: the expectation that if you work hard enough, your future will unfold neatly. But for many graduates entering the job market, reality feels far messier.<br><br>When speaking to Amanda Amaeshi, what strikes you isn't simply the scale of what she has achieved, a First Class Law degree from UCL, serving on the First Minister's National Advisory Council, and becoming a trustee for the Young Women's Movement. It is how honestly she speaks about uncertainty, burnout, and learning to build a life beyond achievement alone.",
+    path: [
+      {
+        heading: "A Desire to Help, Beyond Stereotypes",
+        body: "Initially, Amanda wanted to be a doctor, a path she attributes partly to the immigrant experience of being pushed toward traditional prestige. Realising she was terrified of blood, she pivoted, but her core motivation remained. Growing up, she was deeply frustrated by the phrase that's just the way the world is. Her refusal to accept unfairness naturally drew her toward politics, advocacy, and social justice from a young age."
+      },
+      {
+        heading: "Trusting Her Gut Against External Expectations",
+        body: "Raised by a mother in medicine and a father in academia, there was an implicit external assumption that Amanda would follow a traditional professional route. However, her parents always championed passion over prestige. At school, she chose to stick with Latin despite peers calling it a useless subject. It became a formative lesson in trusting her gut and continuing with something she genuinely loved, regardless of whether others understood it."
+      },
+      {
+        heading: "The London Transition and Imposter Syndrome",
+        body: "Moving to London to study law at UCL was transformative. Leaving an environment that felt socially restrictive and lacking in diversity, London offered immediate freedom. I could walk down the street and see people who looked like me, she notes. Yet elite law school brought intense imposter syndrome. Surrounded by highly competitive peers, she had to adjust to a new reality where you couldn't simply memorise a marking scheme, and there wasn't always a single right answer."
+      },
+      {
+        heading: "Rejecting the Corporate Law Pipeline",
+        body: "Like most law students, Amanda was funnelled toward commercial law careers. Attending networking events, she quickly realised she didn't care about finance terminology or corporate shares. Despite the immense pressure to follow the pack, she chose to reject the corporate legal qualification route after graduation, holding firm to her values and focusing instead on public-facing advocacy and systemic change."
+      },
+      {
+        heading: "The Myth of the Linear Path",
+        body: "Postgraduate life brought a stark reality check. Despite a stellar CV, Amanda faced a wall of ghosting and rejections from entry-level roles that were ultimately given to applicants with a decade of experience. She later secured a legal traineeship at the Council of Europe in Strasbourg. Today, she balances multiple freelance, trustee, and casework roles, viewing the variety as energising rather than a lack of direction."
+      },
+      {
+        heading: "Redefining Success Through Running",
+        body: "As a teenager, Amanda joined the First Minister's National Advisory Council on Women and Girls alongside CEOs and professors, learning early on that nobody knows everything. Today, her biggest shift has been detaching her identity from productivity. She started doing Parkrun to prove to herself that not everything has to be tied to perfection or being the best in the room. Success, she has learned, is simply continuing to show up for yourself."
+      }
+    ],
+    pullQuote: "I applied for loads of entry-level jobs and would get rejected or ghosted completely, only to see the person who got it graduated ten years ago. It felt like: I did everything I was supposed to do, where is the job?",
+    advice: "Do not tie your entire self-worth to productivity or academic performance. Show personality on professional platforms like LinkedIn by sharing actual thoughts on policy issues, and remember that success is not linear, it is okay to wear multiple hats.",
+    uniRoute: "Yes, graduated with a First Class LLB Law degree from University College London.",
+    publishedDate: "June 2026"
+  },
+  {
+    id: "stephanie-burgoyne",
+    name: "Stephanie Burgoyne",
+    image: "stephanie.jpeg",
+    industry: "tech",
+    industryLabel: "Tech",
+    role: "IT Consultant Apprentice",
+    location: "IBM, Scotland",
+    hook: "Rejected from apprenticeships for not having Higher Maths, Stephanie applied anyway and is now an award-winning IT Consultant Apprentice at IBM.",
+    intro: "When people picture someone working in technology, they often imagine someone who excelled at maths, studied computing throughout school, and always knew they wanted a career in the industry.<br><br>Stephanie Burgoyne was none of those things.<br><br>She left school with Highers in Health and Food Technology, Modern Studies, English and Drama. She admits she was never the most academic person and, after being rejected from apprenticeship schemes because she didn't have Higher Maths, questioned whether a career in tech was really possible.<br><br>Four years later, she is an IT Consultant Apprentice at IBM, studying towards a Graduate Apprenticeship degree while helping deliver digital services for Social Security Scotland. Along the way, she has also become an award-winning apprentice and a passionate advocate for alternative routes into employment.",
+    path: [
+      {
+        heading: "Finding the Right Path",
+        body: "Unlike many people who can pinpoint their dream career from childhood, Stephanie's ambition wasn't tied to one particular job. Instead, she knew she enjoyed learning, working with people and keeping busy.<br><br>From the age of fourteen she worked part-time in a charity shop, later moving into a cafe before becoming a receptionist. Those experiences confirmed something she hadn't expected: she genuinely enjoyed working.<br><br>I liked being in fast-paced environments. I am quite hands-on and I don't like sitting doing nothing. I realised pretty quickly that learning while working suited me much better than sitting in a classroom.<br><br>Although she applied to university to study Business Management and received conditional offers, she wasn't convinced the traditional route was right for her."
+      },
+      {
+        heading: "Discovering Graduate Apprenticeships",
+        body: "Like many school leavers, Stephanie says she received very little information about graduate apprenticeships. My school mostly pushed university. I honestly didn't know graduate apprenticeships existed.<br><br>Instead, she stumbled across them through TikTok after watching a day-in-the-life video from another apprentice. Curious, she reached out on Instagram to ask questions about the role and application process. Ironically, she later discovered that the apprentice who had inspired her online worked at IBM too.<br><br>Determined to give herself every opportunity, Stephanie applied for several apprenticeship programmes across different industries, from banking to car sales. While some employers praised her personality and experience, one rejected her solely because she lacked Higher Maths. Rather than seeing it as the end of the road, she kept applying.<br><br>The worst they can say is no. If you like the sound of a role, apply anyway."
+      },
+      {
+        heading: "Standing Out Through Creativity",
+        body: "Knowing she wasn't the strongest candidate academically, Stephanie focused on showcasing what made her different.<br><br>As part of her IBM interview, candidates were asked to create a presentation about themselves using only pictures and videos. Rather than producing a standard slideshow, she designed hers to look like Netflix, complete with profile screens and personalised episodes about her family, hobbies and work experience.<br><br>I wanted them to see who I was rather than just my grades.<br><br>The approach worked. IBM offered her an apprenticeship, giving her a year of industry experience before she began studying for her Graduate Apprenticeship alongside work."
+      },
+      {
+        heading: "Learning on the Job",
+        body: "Today, Stephanie spends four days each week working and one day studying at university.<br><br>As an IT Consultant Apprentice, she helps manage software releases for Social Security Scotland, ensuring digital updates are delivered safely and efficiently for services that thousands of people rely on.<br><br>One project involved implementing changes linked to Scottish benefits, while another focused on improving internal processes to reduce release times from six days to just three.<br><br>Working while studying has given her an advantage she hadn't expected. You are learning something at university and then applying it straight away at work. It makes everything click much faster.<br><br>Despite coming from a non-technical background, Stephanie says her lack of Higher Maths has never held her back. It is much more about your willingness to learn than where you started."
+      },
+      {
+        heading: "Changing Perceptions of Apprenticeships",
+        body: "One of Stephanie's proudest achievements came when she was named Apprentice of the Year.<br><br>Since then, she has become an ambassador for apprenticeships, regularly visiting schools, speaking to parents and mentoring future applicants through mock assessment centres and careers events. She also serves on Scotland's Apprenticeship Advisory Board, helping shape conversations around future apprenticeship opportunities.<br><br>For Stephanie, it is about making sure young people know there are alternatives to university. I never had that support at school. If I can help someone realise they have more than one option, that is something I am really proud of."
+      },
+      {
+        heading: "Looking Ahead",
+        body: "With graduation now in sight, Stephanie hopes to continue progressing within IBM while exploring new challenges as her career develops.<br><br>She enjoys constantly learning and admits she doesn't like standing still for long. I don't really enjoy coasting. Once I feel comfortable, I want to push myself again.<br><br>Whether that is climbing the career ladder, leading larger teams or continuing to champion apprenticeships, one thing is certain: Stephanie's journey proves that careers rarely follow one fixed route. Sometimes, all it takes is applying anyway."
+      }
+    ],
+    pullQuote: "The worst they can say is no. If you like the sound of a role, apply anyway.",
+    advice: "Don't rule yourself out before someone else does. If a role interests you, apply even if you don't meet every requirement. Highlight your transferable skills, be creative when showing employers who you are, and remember there is more than one route into a successful career.",
+    uniRoute: "Yes, via a Graduate Apprenticeship. Stephanie studies one day a week at university while working four days at IBM, meaning she will graduate with a degree while gaining industry experience and earning a salary at the same time.",
+    publishedDate: "June 2026"
+  },
+  {
     id: "emma-leslie",
     name: "Emma Leslie",
     image: "emma.jpeg",
     industry: "hospitality",
-    industryLabel: "Hospitality",
+    industryLabel: "Food & Hospitality",
     role: "Microbakery founder",
     location: "Dunoon, Scotland",
     hook: "From a farm in Aberdeenshire to selling out loaves from her driveway, built on instinct, bread, and a camper van.",
@@ -240,55 +322,15 @@ const profiles = [
     advice: "Take the risk, if you don't give new things a chance you will find yourself getting very bored very quickly. And dedicate real time to learning before you start, it made Rachel's first day significantly less daunting.",
     uniRoute: "No. Rachel left school and went straight into hospitality. Her decade of customer-facing experience proved to be the best possible training for a sales career.",
     publishedDate: "August 2025"
-  },
-  {
-    id: "stephanie-burgoyne",
-    name: "Stephanie Burgoyne",
-    image: "stephanie.jpeg",
-    industry: "tech",
-    industryLabel: "Tech",
-    role: "IT Consultant Apprentice",
-    location: "IBM, Scotland",
-    hook: "Rejected from apprenticeships for not having Higher Maths, Stephanie applied anyway and is now an award-winning IT Consultant Apprentice at IBM.",
-    intro: "When people picture someone working in technology, they often imagine someone who excelled at maths, studied computing throughout school, and always knew they wanted a career in the industry.<br><br>Stephanie Burgoyne was none of those things.<br><br>She left school with Highers in Health and Food Technology, Modern Studies, English and Drama. She admits she was never the most academic person and, after being rejected from apprenticeship schemes because she didn't have Higher Maths, questioned whether a career in tech was really possible.<br><br>Four years later, she is an IT Consultant Apprentice at IBM, studying towards a Graduate Apprenticeship degree while helping deliver digital services for Social Security Scotland. Along the way, she has also become an award-winning apprentice and a passionate advocate for alternative routes into employment.",
-    path: [
-      {
-        heading: "Finding the Right Path",
-        body: "Unlike many people who can pinpoint their dream career from childhood, Stephanie's ambition wasn't tied to one particular job. Instead, she knew she enjoyed learning, working with people and keeping busy.<br><br>From the age of fourteen she worked part-time in a charity shop, later moving into a cafe before becoming a receptionist. Those experiences confirmed something she hadn't expected: she genuinely enjoyed working.<br><br>I liked being in fast-paced environments. I am quite hands-on and I don't like sitting doing nothing. I realised pretty quickly that learning while working suited me much better than sitting in a classroom.<br><br>Although she applied to university to study Business Management and received conditional offers, she wasn't convinced the traditional route was right for her."
-      },
-      {
-        heading: "Discovering Graduate Apprenticeships",
-        body: "Like many school leavers, Stephanie says she received very little information about graduate apprenticeships. My school mostly pushed university. I honestly didn't know graduate apprenticeships existed.<br><br>Instead, she stumbled across them through TikTok after watching a day-in-the-life video from another apprentice. Curious, she reached out on Instagram to ask questions about the role and application process. Ironically, she later discovered that the apprentice who had inspired her online worked at IBM too.<br><br>Determined to give herself every opportunity, Stephanie applied for several apprenticeship programmes across different industries, from banking to car sales. While some employers praised her personality and experience, one rejected her solely because she lacked Higher Maths. Rather than seeing it as the end of the road, she kept applying.<br><br>The worst they can say is no. If you like the sound of a role, apply anyway."
-      },
-      {
-        heading: "Standing Out Through Creativity",
-        body: "Knowing she wasn't the strongest candidate academically, Stephanie focused on showcasing what made her different.<br><br>As part of her IBM interview, candidates were asked to create a presentation about themselves using only pictures and videos. Rather than producing a standard slideshow, she designed hers to look like Netflix, complete with profile screens and personalised episodes about her family, hobbies and work experience.<br><br>I wanted them to see who I was rather than just my grades.<br><br>The approach worked. IBM offered her an apprenticeship, giving her a year of industry experience before she began studying for her Graduate Apprenticeship alongside work."
-      },
-      {
-        heading: "Learning on the Job",
-        body: "Today, Stephanie spends four days each week working and one day studying at university.<br><br>As an IT Consultant Apprentice, she helps manage software releases for Social Security Scotland, ensuring digital updates are delivered safely and efficiently for services that thousands of people rely on.<br><br>One project involved implementing changes linked to Scottish benefits, while another focused on improving internal processes to reduce release times from six days to just three.<br><br>Working while studying has given her an advantage she hadn't expected. You are learning something at university and then applying it straight away at work. It makes everything click much faster.<br><br>Despite coming from a non-technical background, Stephanie says her lack of Higher Maths has never held her back. It is much more about your willingness to learn than where you started."
-      },
-      {
-        heading: "Changing Perceptions of Apprenticeships",
-        body: "One of Stephanie's proudest achievements came when she was named Apprentice of the Year.<br><br>Since then, she has become an ambassador for apprenticeships, regularly visiting schools, speaking to parents and mentoring future applicants through mock assessment centres and careers events. She also serves on Scotland's Apprenticeship Advisory Board, helping shape conversations around future apprenticeship opportunities.<br><br>For Stephanie, it is about making sure young people know there are alternatives to university. I never had that support at school. If I can help someone realise they have more than one option, that is something I am really proud of."
-      },
-      {
-        heading: "Looking Ahead",
-        body: "With graduation now in sight, Stephanie hopes to continue progressing within IBM while exploring new challenges as her career develops.<br><br>She enjoys constantly learning and admits she doesn't like standing still for long. I don't really enjoy coasting. Once I feel comfortable, I want to push myself again.<br><br>Whether that is climbing the career ladder, leading larger teams or continuing to champion apprenticeships, one thing is certain: Stephanie's journey proves that careers rarely follow one fixed route. Sometimes, all it takes is applying anyway."
-      }
-    ],
-    pullQuote: "The worst they can say is no. If you like the sound of a role, apply anyway.",
-    advice: "Don't rule yourself out before someone else does. If a role interests you, apply even if you don't meet every requirement. Highlight your transferable skills, be creative when showing employers who you are, and remember there is more than one route into a successful career.",
-    uniRoute: "Yes, via a Graduate Apprenticeship. Stephanie studies one day a week at university while working four days at IBM, meaning she will graduate with a degree while gaining industry experience and earning a salary at the same time.",
-    publishedDate: "June 2026"
   }
 ];
 
 const industries = [
   { value: "all", label: "All" },
-  { value: "hospitality", label: "Hospitality" },
-  { value: "design", label: "Design & Creative" },
+  { value: "law", label: "Law & Advocacy" },
   { value: "tech", label: "Tech" },
+  { value: "hospitality", label: "Food & Hospitality" },
+  { value: "design", label: "Design & Creative" },
   { value: "fashion", label: "Fashion" },
   { value: "craft", label: "Craft & Making" },
   { value: "sales", label: "Sales" }
